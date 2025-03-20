@@ -7,3 +7,8 @@ export const messagesTable = sqliteTable('messages', {
   channel: text().notNull(),
   timestamp: text().notNull()
 });
+
+export const mainAuthorsTable = sqliteTable('main_authors', {
+  id: text().primaryKey(),
+  name: text().notNull()
+});
